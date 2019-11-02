@@ -1,0 +1,24 @@
+{
+  "name": "swap-multisig",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx riteway test/*.test.js | tap-nirvana",
+    "deploy": "node ./scripts/deploy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/buidler": "^1.0.1",
+    "@nomiclabs/buidler-truffle5": "^1.0.1",
+    "@nomiclabs/buidler-web3": "^1.0.1",
+    "web3": "^1.2.1",
+    "riteway": "^6.1.0",
+    "tap-nirvana": "^1.1.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^2.4.0"
+  }
+}
