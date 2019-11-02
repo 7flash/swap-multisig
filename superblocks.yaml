@@ -1,0 +1,17 @@
+version: 1
+jobs:
+  compile:
+    image: node
+    script:
+      - npm install
+      - npx buidler compile
+  test:
+    image: node
+    script:
+      - npm install
+      - npm run test
+stages:
+  - pipeline:
+      jobs:
+        - compile
+        - test
